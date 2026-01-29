@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asistente Virtual | YourBiz Creations LLC</title>
+  <link rel="stylesheet" href="stylep2.css">
+  <link rel="icon" href="assest/favicon_io/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="assest/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assest/favicon_io/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="assest/favicon_io/apple-touch-icon.png">
+  <link rel="manifest" href="assest/favicon_io/site.webmanifest">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- IZQUIERDA -->
+    <div class="info-panel">
+      <button class="back-btn" onclick="history.back()">⟵ Volver</button>
+
+      <img class="logo" src="./img/image.png" alt="Logo YourBiz" />
+
+      <h1>¡Hola! Soy tu Asistente Virtual</h1>
+
+      <p>
+        Estoy aquí para ayudarte con tus consultas sobre creación de empresas en EE. UU.,
+        registro de LLC, obtención de EIN, cuentas bancarias y más. 💼✨
+      </p>
+
+      <img
+        class="assistant-illustration"
+        src="https://cdn-icons-png.flaticon.com/512/4712/4712101.png"
+        alt="Asistente virtual"
+      />
+    </div>
+
+    <!-- DERECHA -->
+    <div class="chat-panel">
+      <div id="botpress-chat-wrapper">
+        <div id="botpress-chat"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botpress -->
+   <script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js" defer></script>
+
+  <!-- Botpress config -->
+   <script src="asistente.js" defer></script>
+
+
+</body>
+</html>
